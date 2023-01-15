@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head lang="th">
+    {% load static %}
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link type="text/css" rel="stylesheet"
+              href="{% static 'stylesheet/bt523/css/bootstrap.css' %}">
+        <script src="{% static 'stylesheet/bt523/js/bootstrap.css' %}"></script>
+    </head>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 bg-primary">
+            {% include 'heaber.html' %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 bg-info text-dark">
+            {% include 'memu.html' %}
+        </div>
+        <div class="col-lg-9 bg-secondary text-primary">
+            {% block conter %}
+
+            {% endblock %}
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block conter %}
+    <div class="table-danger"><h1>This my sample web</h1></div>
+
+    <h2>Welcome to Digital</h2>
+
+    <img src="{% static 'images/bf02.jpg' %}" width="400" height="200"
+         class="rounded"><br>
+    <img src="{% static 'images/bf02.jpg' %}" width="400" height="200"
+         class="rounded"><br>
+    <br><br>
+
+    <a href="secondpage.html" class="btn btn-warning">Go to Secon Dpage</a>
+    <a href="thirdpage.html" class="btn btn-success">Go to Third Page</a><br>
+    <br><br><br><br>
+{% endblock %}
